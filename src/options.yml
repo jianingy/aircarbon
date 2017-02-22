@@ -1,0 +1,24 @@
+name: aircarbon
+version: "0.1.0"
+author: Jianing Yang <jianingy.yang@gmail.com>
+about: read air quality data from plantower device and send to a graphite server
+args:
+  - verbose:
+      short: v
+      multiple: true
+      help: sets the level of verbosity
+  - port:
+      short: p
+      long: port
+      help: sets the serial port of reading data
+      takes_value: true
+  - interval:
+      short: i
+      long: interval
+      help: interval between two reads
+      takes_value: true
+      default_value: '5'
+  - carbon:
+      long: carbon-server
+      help: sending metric values to this carbon server
+      takes_value: true

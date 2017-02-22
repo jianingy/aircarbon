@@ -1,0 +1,13 @@
+[package]
+name = "aircarbon"
+version = "0.1.0"
+description = "read air quality data from plantower device and send to a graphite server"
+authors = ["Jianing Yang"]
+
+[dependencies]
+clap = { version = "2.20", default-features = false, features = ["suggestions", "yaml"] }
+chrono = "0.3"
+error-chain = "0.9"
+serial = "0.3"
+env_logger = "0.3"
+log = "0.3"
